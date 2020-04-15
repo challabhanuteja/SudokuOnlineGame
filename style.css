@@ -1,0 +1,83 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: azure;
+}
+
+:root {
+    --board-height: 530px;
+    --board-width: 530px;
+    --box-height: 40px;
+    --box-width: 40px;
+    --border-width: 1px;
+    --grid-gapvar:0rem;
+    --box-margin: 6px;
+    --board-margin:20px;
+    --extra-box-margin: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: var(--grid-gapvar);
+    border: var(--border-width) solid black;
+    height: var(--board-height);
+    width: var(--board-width);
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: var(--box-height);
+    width: var(--box-width);
+    border: var(--border-width) solid black;
+    margin: var(--box-margin);
+    background-color: cornflowerblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.board{
+    margin: var(--board-margin);
+    background-color: rgb(198, 198, 233);
+}
+
+.btn{
+    height: 40px;
+    width: 70px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+    background-color: cornflowerblue;
+    border-color: blue;
+    border-radius: 10px;
+}
+.box-input{
+    height: var(--box-height);
+    width: var(--box-width);
+    font-size: 20px;
+    text-align: center;
+    border: 2px black;
+}
+.sp1{
+    margin-top: var(--extra-box-margin);
+}
+.sp2{
+    margin-left: var(--extra-box-margin);
+}
