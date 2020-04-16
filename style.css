@@ -81,3 +81,6 @@ body {
 .sp2{
     margin-left: var(--extra-box-margin);
 }
+#result{
+    color: green;
+}
