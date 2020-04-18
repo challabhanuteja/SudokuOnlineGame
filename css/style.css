@@ -56,6 +56,7 @@ body {
 .inp{
     height: var(--box-height);
     width: var(--box-width);
+    text-align: center;
 }
 
 .container {
