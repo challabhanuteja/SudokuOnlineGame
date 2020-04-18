@@ -13,10 +13,17 @@ body {
     --box-height: 40px;
     --box-width: 40px;
     --border-width: 1px;
-    --grid-gapvar:0rem;
+    --grid-gap:0rem;
     --box-margin: 6px;
     --board-margin:20px;
     --extra-box-margin: 30px;
+    --box-font-size:20px;
+    --btn-height: 40px;
+    --btn-width: 70px;
+    --btn-fontsize: 15px;
+    --btn-padding: 5px;
+    --btn-margin: 10px;
+    --btn-border-radius: 10px;
 }
 
 .center {
@@ -27,7 +34,7 @@ body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
-    grid-gap: var(--grid-gapvar);
+    grid-gap: var(--grid-gap);
     border: var(--border-width) solid black;
     height: var(--board-height);
     width: var(--board-width);
@@ -41,10 +48,14 @@ body {
     border: var(--border-width) solid black;
     margin: var(--box-margin);
     background-color: cornflowerblue;
-    font-size: 20px;
+    font-size: var(--box-font-size);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.inp{
+    height: var(--box-height);
+    width: var(--box-width);
 }
 
 .container {
@@ -59,21 +70,21 @@ body {
 }
 
 .btn{
-    height: 40px;
-    width: 70px;
-    font-size: 15px;
-    padding: 5px;
-    margin: 10px;
+    height: var(--btn-height);
+    width: var(--btn-width);
+    font-size: var(--btn-fontsize);
+    padding: var(--btn-padding);
+    margin: var(--btn-margin);
     background-color: cornflowerblue;
     border-color: blue;
-    border-radius: 10px;
+    border-radius: var(--btn-border-radius);
 }
 .box-input{
     height: var(--box-height);
     width: var(--box-width);
-    font-size: 20px;
+    font-size: var(--box-font-size);
     text-align: center;
-    border: 2px black;
+    border: var(--border-width) black;
 }
 .sp1{
     margin-top: var(--extra-box-margin);

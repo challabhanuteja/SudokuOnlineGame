@@ -19,7 +19,7 @@ for (let i = 0; i < 9; i++) {
         let s = 't' + i.toString() + j.toString();
         box = document.getElementById(s);
         if (board[i][j] == 0) {
-            box.innerHTML = `<input id ="i${i}${j}" type="text" class="box-input">`;
+            box.innerHTML = `<input class='inp' id ="i${i}${j}" type="text" class="box-input">`;
         }
         else {
             box.innerHTML = board[i][j];
@@ -166,3 +166,9 @@ function reset()
 {
     location.reload();
 }
+
+// let ob = document.getElementsByClassName('inp');
+// console.log(ob);
+// ob.addEventListener('onchange', function checkTextValidity(){
+//     console.log("changed", ob.value);
+// });
