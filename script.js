@@ -39,7 +39,7 @@ function submit(){
     {
         for (let i = 0; i < 9; i++) {
             for (let j = 0; j < 9; j++) {
-                if (userSolution[i][j] == 0 || isNaN(userSolution[i][j])) {
+                if (oldBoard[i][j] == 0) {
                     
                     let s = 'i' + i.toString() + j.toString();
                     inp = document.getElementById(s);
