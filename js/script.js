@@ -19,7 +19,7 @@ for (let i = 0; i < 9; i++) {
         let s = 't' + i.toString() + j.toString();
         box = document.getElementById(s);
         if (board[i][j] == 0) {
-            box.innerHTML = `<input class='inp' id ="i${i}${j}" type="text" class="box-input">`;
+            box.innerHTML = `<input id ="i${i}${j}" type="text" class="box-input">`;
         }
         else {
             box.innerHTML = board[i][j];
@@ -55,14 +55,14 @@ function submit(){
             console.log("win");
             let x = document.getElementById("result");
             x.style.color="green";
-            x.innerHTML =`<h2>Winner Winner Chicken Dinner</h2>`
+            x.innerHTML =`Winner Winner Chicken Dinner`
 
         }
         else{
             console.log("loose");
             let x = document.getElementById("result");
             x.style.color="red";
-            x.innerHTML =`<h2>Try again</h2>`
+            x.innerHTML =`Try again`
         }
     }
 }
@@ -84,7 +84,7 @@ function solveBoard(){
     }
     let x = document.getElementById("result");
     x.style.color ="blue";
-    x.innerHTML =  `<h2>Sudoku is solved</h2>`;
+    x.innerHTML =  `Sudoku is solved`;
 }
 
 
@@ -166,9 +166,3 @@ function reset()
 {
     location.reload();
 }
-
-// let ob = document.getElementsByClassName('inp');
-// console.log(ob);
-// ob.addEventListener('onchange', function checkTextValidity(){
-//     console.log("changed", ob.value);
-// });
